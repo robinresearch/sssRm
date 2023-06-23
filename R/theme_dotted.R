@@ -10,8 +10,8 @@
 #' p + theme_dotted()
 #'
 theme_dotted <- function() {
-  theme_minimal() +
-    theme(
+  ggplot2::theme_minimal() +
+    ggplot2::theme(
       panel.grid.major.y = element_line(color = "grey", size = 0.1, linetype = "dotted"),
       panel.background = element_blank(),
       axis.line = element_line(colour = "grey"),
