@@ -12,11 +12,11 @@
 theme_dotted <- function() {
   ggplot2::theme_minimal() +
     ggplot2::theme(
-      panel.grid.major.y = element_line(color = "grey", size = 0.1, linetype = "dotted"),
-      panel.background = element_blank(),
-      axis.line = element_line(colour = "grey"),
-      legend.title = element_text(size = 12),
-      text = element_text(face = "plain", family = "sans"),
-      legend.key=element_blank()
+      panel.grid.major.y = ggplot2::element_line(color = "grey", size = 0.1, linetype = "dotted"),
+      panel.background = ggplot2::element_blank(),
+      axis.line = ggplot2::element_line(colour = "grey"),
+      legend.title = ggplot2::element_text(size = 12),
+      text = ggplot2::element_text(face = "plain", family = "sans"),
+      legend.key  =ggplot2::element_blank()
     )
 }
